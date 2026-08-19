@@ -1,0 +1,60 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polityka prywatności — Splot</title>
+<!-- Źródło treści: PRIVACY_POLICY.md w korzeniu repozytorium. Zmiana idzie w oba pliki
+     w jednym commicie — Play sprawdza ten adres, więc nie może się rozjechać z repo. -->
+<style>
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1.2rem;
+         font: 1rem/1.6 system-ui, sans-serif; color: #23201c; background: #f7f3ec; }
+  h1 { font-size: 1.6rem } h2 { font-size: 1.15rem; margin-top: 2rem }
+  code { background: #e9e2d6; padding: .1em .3em; border-radius: .2em }
+  @media (prefers-color-scheme: dark) { body { color: #ece6dc; background: #1b1917 }
+    code { background: #2c2825 } }
+</style>
+
+<h1>Polityka prywatności — Splot</h1>
+<p><strong>Wydawca:</strong> Molly (studio autorskie, kontakt: Prawiejakmail@gmail.com)<br>
+<strong>Aplikacja:</strong> Splot (<code>com.molly.splot</code>)<br>
+<strong>Data wersji:</strong> 19 sierpnia 2026</p>
+
+<p>Ten dokument opisuje stan kodu w repozytorium, nie plany. Każde zdanie da się sprawdzić
+w źródłach; gdy zmieni się kod, zmienia się ten dokument.</p>
+
+<h2>Krótko</h2>
+<p>Splot nie zbiera, nie wysyła i nie przechowuje żadnych danych o graczu. Gra nie ma konta,
+nie ma serwera i nie łączy się z internetem.</p>
+
+<h2>Co gra zapisuje</h2>
+<p>Wyłącznie na urządzeniu, w pamięci lokalnej przeglądarki systemowej (<code>localStorage</code>):</p>
+<ul>
+  <li>numer osiągniętego poziomu i najlepszy wynik każdego ukończonego poziomu (gwiazdki, celność, czas),</li>
+  <li>ustawienia: dźwięk, muzyka, wibracja, motyw, język,</li>
+  <li>informację, czy samouczek został już obejrzany.</li>
+</ul>
+<p>Tych danych nikt poza aplikacją nie czyta. Nie opuszczają urządzenia. Usuwa je odinstalowanie
+gry albo „Zacznij od nowa” w ustawieniach. Kopia zapasowa Androida może przenieść ten zapis
+na nowy telefon gracza — obejmuje tylko powyższą listę.</p>
+
+<h2>Czego gra nie robi</h2>
+<ul>
+  <li>nie prosi o żadne uprawnienia poza dostępem do sieci (<code>INTERNET</code>), którego dziś nie używa,</li>
+  <li>nie zbiera lokalizacji, kontaktów, zdjęć, mikrofonu, IMEI ani adresu MAC,</li>
+  <li>nie ma analityki, śledzenia, reklam ani identyfikatora reklamowego,</li>
+  <li>nie ma logowania, kont, zakupów w aplikacji ani płatności,</li>
+  <li>nie kieruje treści do konkretnego gracza i nie profiluje.</li>
+</ul>
+
+<h2>Dzieci</h2>
+<p>Gra nie zbiera danych. Nie zawiera treści dla dorosłych, przemocy ani czatu.
+Grupa docelowa zadeklarowana w Google Play to 13 lat i więcej.</p>
+
+<h2>Reklamy — stan na dziś</h2>
+<p>W wydanym kodzie nie ma żadnego SDK reklamowego. Warstwa reklam to atrapa działająca
+lokalnie, bez sieci i bez identyfikatorów. Jeśli reklamy (Google AdMob) kiedykolwiek trafią
+do gry, ta polityka i deklaracja Data Safety w Google Play zostaną zaktualizowane
+<em>przed</em> publikacją takiej wersji, a zgoda na personalizację będzie zbierana przez
+formularz UMP zgodnie z RODO.</p>
+
+<h2>Kontakt</h2>
+<p>Pytania i żądania dotyczące tej polityki: Prawiejakmail@gmail.com</p>
