@@ -16,7 +16,7 @@
 <h1>Polityka prywatności — Splot</h1>
 <p><strong>Wydawca:</strong> Molly VibeDev (kontakt: kaczynskijarek@gmail.com)<br>
 <strong>Aplikacja:</strong> Splot (<code>com.molly.splot</code>)<br>
-<strong>Data wersji:</strong> 19 sierpnia 2026</p>
+<strong>Data wersji:</strong> 6 października 2026</p>
 
 <p>Ten dokument opisuje stan kodu w repozytorium, nie plany. Każde zdanie da się sprawdzić
 w źródłach; gdy zmieni się kod, zmienia się ten dokument.</p>
@@ -38,10 +38,9 @@ na nowy telefon gracza — obejmuje tylko powyższą listę.</p>
 
 <h2>Czego gra nie robi</h2>
 <ul>
-  <li>nie prosi o żadne uprawnienia poza dostępem do sieci (<code>INTERNET</code>), którego dziś nie używa,</li>
+  <li>nie prosi o żadne uprawnienia poza dostępem do sieci (<code>INTERNET</code>, używany przez SDK reklam) i identyfikatorem reklamowym (<code>AD_ID</code>),</li>
   <li>nie zbiera lokalizacji, kontaktów, zdjęć, mikrofonu, IMEI ani adresu MAC,</li>
-  <li>nie ma analityki, śledzenia, reklam ani identyfikatora reklamowego,</li>
-  <li>nie ma logowania, kont, zakupów w aplikacji ani płatności,</li>
+  <li>nie ma analityki, logowania, kont, zakupów w aplikacji ani płatności,</li>
   <li>nie kieruje treści do konkretnego gracza i nie profiluje.</li>
 </ul>
 
@@ -49,12 +48,16 @@ na nowy telefon gracza — obejmuje tylko powyższą listę.</p>
 <p>Gra nie zbiera danych. Nie zawiera treści dla dorosłych, przemocy ani czatu.
 Grupa docelowa zadeklarowana w Google Play to 13 lat i więcej.</p>
 
-<h2>Reklamy — stan na dziś</h2>
-<p>W wydanym kodzie nie ma żadnego SDK reklamowego. Warstwa reklam to atrapa działająca
-lokalnie, bez sieci i bez identyfikatorów. Jeśli reklamy (Google AdMob) kiedykolwiek trafią
-do gry, ta polityka i deklaracja Data Safety w Google Play zostaną zaktualizowane
-<em>przed</em> publikacją takiej wersji, a zgoda na personalizację będzie zbierana przez
-formularz UMP zgodnie z RODO.</p>
+<h2>Reklamy</h2>
+<p>Gra wyświetla reklamy przez <strong>Google AdMob</strong> (dwie jednostki
+z nagrodą i jedna pełnoekranowa). SDK Google pobiera reklamy przez sieć i w tym
+celu przetwarza identyfikator reklamowy urządzenia oraz dane techniczne żądania
+— zgodnie z polityką Google: https://policies.google.com/privacy. Gra nie
+przekazuje Google żadnych własnych danych o graczu (postęp i ustawienia zostają
+na urządzeniu).</p>
+<p>W Europejskim Obszarze Gospodarczym personalizacja działa tylko za zgodą
+zbieraną formularzem UMP przed pierwszą reklamą; zgodę można zmienić wierszem
+„Ustawienia prywatności" w ustawieniach gry.</p>
 
 <h2>Kontakt</h2>
 <p>Pytania i żądania dotyczące tej polityki: kaczynskijarek@gmail.com</p>
